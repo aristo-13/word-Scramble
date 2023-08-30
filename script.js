@@ -1,22 +1,10 @@
 const words = [
-    "APPLE",
-    "TABLE",
-    "BREAD",
-    "SWORD",
-    "FRUIT",
-    "WATER",
-    "HAPPY",
-    "PLANT",
-    "STARS",
-    "SMILE",
-    "MOUSE",
-    "FLOOR",
-    "CHAIR",
-    "LIGHT",
-    "MUSIC",
-    "GRASS",
-    "HEART",
-    "ROCKS",
+    "APPLE","TABLE", "BREAD",
+    "SWORD","FRUIT","WATER", 
+    "HAPPY", "PLANT", "STARS", 
+    "SMILE", "MOUSE", "FLOOR",
+    "CHAIR", "LIGHT", "MUSIC",
+    "GRASS","HEART","ROCKS",
     "SKYPE",
     "FIRED"
 ];
@@ -31,7 +19,7 @@ let word
 let a
 let b
 let timeIN
-let is_done = false
+
 
 refeshbtn.addEventListener('click', (e) =>{
     e.target.textContent = 'Refresh'
