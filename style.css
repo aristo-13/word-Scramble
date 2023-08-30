@@ -118,9 +118,7 @@ body{
     right: -100%;
     transition: all 0.7s ease;
 }
-.invalid.active{
-    right: 5px;
-}
+
 .in{
     position: relative;
     display: flex;

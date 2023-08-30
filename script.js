@@ -81,9 +81,9 @@ function refeshWord(){
 
 
 checkbtn.addEventListener('click', () =>{
-    if(UserInput.value !== '')
-        checkRes()
-    else enterWord()
+    if(UserInput.value == '')
+       enterWord()
+    else checkRes()
 })
 function checkRes(){
     clearInterval(timeIN)
@@ -120,11 +120,11 @@ document.addEventListener('click', (e) =>{
 let invalid = document.querySelector('.invalid')
 function enterWord(){
     let line = document.querySelector('.line')
-    invalid.classList.add('active')
+    invalid.style.right = '5px'
     line.classList.add('active')
     
 
-    if(line.style.width == '0'){
+    if(line.style.width === '0px'){
       invalid.style.display = 'none'
     }
 }
