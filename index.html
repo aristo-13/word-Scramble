@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
+    <link rel="stylesheet" href="/word-Scramble/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <span class="logo">Word Scramble</span>
+        </div>
+
+        <div class="word">
+               <span class="shuffled-word">START</span>
+        </div>
+
+        
+        <div class="btns-n-input">
+            <span class="timer">Time left: 30s</span>
+
+               <div class="user-in">
+                <input type="text" class="input-box" placeholder="Enter Word" autofocus>
+               </div>
+        </div>
+        <div class="btn">
+            <button class="refresh">Start</button>
+            <button class="check">CHECK</button>
+        </div>
+
+        <div class="result">
+            <div class="inner"> 
+                <span class="material-symbols-outlined">
+                check
+                </span>
+                <span class="feedback"></span>
+            </div>
+        </div>
+    </div>
+    <div class="invalid">
+        <div class="in">
+            <span>PLEASE ENTER A WORD</span>
+            <span class="material-symbols-outlined close">
+                close
+                </span>
+                <div class="line"></div>
+        </div>
+    </div>
+        <script src="/word-Scramble/script.js"></script>
+</body>
+</html>
