@@ -5,8 +5,7 @@ const words = [
     "SMILE", "MOUSE", "FLOOR",
     "CHAIR", "LIGHT", "MUSIC",
     "GRASS","HEART","ROCKS",
-    "SKYPE",
-    "FIRED"
+    "SKYPE", "FIRED"
 ];
 
 const refeshbtn = document.querySelector('.refresh')
