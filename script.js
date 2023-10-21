@@ -5,9 +5,8 @@ const words = [
     "SMILE", "MOUSE", "FLOOR",
     "CHAIR", "LIGHT", "MUSIC",
     "GRASS","HEART","ROCKS",
-    "SKYPE", "FIRED"
+    "SKYPE", "FIRED",'SOCKS'
 ];
-
 const refeshbtn = document.querySelector('.refresh')
 const checkbtn = document.querySelector('.check')
 const UserInput = document.querySelector('.input-box')
@@ -55,13 +54,15 @@ function refeshWord(){
     for(let i = 0; i < word.length; i++){
         a.push(word[i])
     }
-    for(let i = 0; i < a.length; i++){
-        b.splice(Math.floor(Math.random() * words.length),0,a[i])
+
+    for(let i = 0; i < a.length; i++){                    // ['']
+        b.splice(Math.floor(Math.random() * words.length), 0, a[i]) //['c','a','t']
     }
+
     shuffledWord = b.join('')
 
    if(shuffledWord == word){
-    refeshWord()
+     refeshWord()
    }
    shuffle.textContent = shuffledWord
 }
@@ -110,9 +111,13 @@ function enterWord(){
     invalid.style.right = '5px'
     line.classList.add('active')
     
-
-    if(line.style.width === '0px'){
-      invalid.style.display = 'none'
+    let widthValue = parseInt(getComputedStyle(line).width);
+         
+    /* if(widthValue === 20){
+       console.log('Joy fool waa')
+    } */
+    while(widthValue == 2){
+        console.log('joy fool waa')
     }
 }
 

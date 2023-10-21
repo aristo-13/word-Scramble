@@ -38,6 +38,8 @@ body{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1rem;
+    font-weight: 600;
+    color: rgba(244, 244, 252, 0.877);
 }
 .btns-n-input{
     width: 100%;
@@ -144,6 +146,7 @@ body{
 .line.active{
     animation: width 5s ease;
 } 
+
 @keyframes width {
     from{
         width: 100%;
