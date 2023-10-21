@@ -108,7 +108,7 @@ document.addEventListener('click', (e) =>{
 let invalid = document.querySelector('.invalid')
 function enterWord(){
     let line = document.querySelector('.line')
-    invalid.style.right = '5px'
+    invalid.style.right = '6px'
     line.classList.add('active')
     
     let widthValue = parseInt(getComputedStyle(line).width);
